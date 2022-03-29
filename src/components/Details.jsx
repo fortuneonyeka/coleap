@@ -3,7 +3,8 @@ import React from 'react'
 const Details = ({vehicle, closeModalProp}) => {
   return (
     <div className="w-screen h-screen fixed top-0 flex justify-center items-center bg-gray-400 bg-opacity-30">
-      <div className="bg-white p-8">
+      <div className="bg-white p-8 card">
+      <h1 className="text-center font-bold">Vehicles Details</h1>
       <button onClick={closeModalProp} className="p-2 bg-indigo-600 text-white font-bold">Close</button>
           <div >
               <img src={vehicle.photo} alt="vehicle photo" height="700px" width="700px" />

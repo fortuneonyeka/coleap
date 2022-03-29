@@ -76,13 +76,13 @@ const Product = () => {
      
       {vehicles.length > 0 && (
        
-        <div className="">
+        <div>
           <h1 className="text-center font-bold">Available vehicles</h1>
-          <ul className="grid grid-cols-4">
+          <ul className="grid grid-cols-4 card1">
           {vehicles.map(vehicles => (
             <li key={vehicles.id}> 
             <img onClick={()=>setSelectedVehicle(vehicles)} src={vehicles.photo} alt="Vehicle photo" /> 
-            <h2>{vehicles.make}  {vehicles.model} | {vehicles.price}</h2>
+            <h2 className="text-center">{vehicles.make}  {vehicles.model} | {vehicles.price}</h2>
             </li>
           ))}
           </ul>
