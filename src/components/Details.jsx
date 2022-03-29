@@ -8,11 +8,11 @@ const Details = ({vehicle, closeModalProp}) => {
           <div >
               <img src={vehicle.photo} alt="vehicle photo"  />
           </div>
-          <div className="col-md-6 my-5 py-3">
-            <h1 className="text-danger fw-bold">{vehicle.colors}</h1>
+          <div >
+            <h1>{vehicle.colors}</h1>
             <hr />
-            <h2 className="text-info my-3">${vehicle.price}</h2>
-            <p className="lead">{vehicle.range.distance}</p>
+            <h2 >${vehicle.price}</h2>
+            <p >{vehicle.range.distance}</p>
             
           </div>
     </div>
