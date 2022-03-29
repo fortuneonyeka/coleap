@@ -6,7 +6,7 @@ const Details = ({vehicle, closeModalProp}) => {
       <div className="bg-white p-8">
       <button onClick={closeModalProp} className="p-2 bg-indigo-600 text-white font-bold">Close</button>
           <div >
-              <img src={vehicle.photo} alt="vehicle photo"  />
+              <img src={vehicle.photo} alt="vehicle photo" height="700px" width="700px" />
           </div>
           <div className="">
             <h1 className="">{vehicle.colors}</h1>
