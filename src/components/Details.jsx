@@ -5,8 +5,8 @@ const Details = ({vehicle, closeModalProp}) => {
     <div className="w-screen h-screen fixed top-0 flex justify-center items-center bg-gray-400 bg-opacity-30">
       <div className="bg-white p-8">
       <button onClick={closeModalProp} className="p-2 bg-indigo-600 text-white font-bold">Close</button>
-          <div className="col-md-6 d-flex justify-content-center  my-5">
-              <img src={vehicle.photo} alt="vehicle photo" height="500px" width="500px" />
+          <div >
+              <img src={vehicle.photo} alt="vehicle photo"  />
           </div>
           <div className="col-md-6 my-5 py-3">
             <h1 className="text-danger fw-bold">{vehicle.colors}</h1>
